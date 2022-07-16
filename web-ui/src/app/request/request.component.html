@@ -1,0 +1,50 @@
+<div>
+    <div class="top-section">
+        <h1>Call back request</h1>
+        <p>Call back request can be created here. Request needs customer number and customer full name. Post submitting
+            the
+            request customer will receive call from the back office with in 48 hours.</p>
+    </div>
+    <div [formGroup]="form" class="form-local">
+        <div>
+            <mat-card>{{message}}</mat-card>
+        </div>
+        <div>
+            <hr />
+        </div>
+        <div>
+            <mat-form-field appearance="outline" [style.width.ps]=90>
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Enter firstName" formControlName="firstName">
+
+                <mat-hint>Customer's Firstname</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Enter lastName" formControlName="lastName">
+                <mat-hint>Customer's Lastname</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input matInput placeholder="Enter mobileNumber" formControlName="mobileNumber">
+                <mat-hint>Mobile number</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-label>{{ticketTime | date: 'dd/MMM/yyyy hh:mm'}}</mat-label>
+        </div>
+        <div>
+            <hr />
+        </div>
+        <div class="button-container">
+            <button type="submit" mat-raised-button color="primary" class="primary-button"
+                (click)="createRequest()">Create
+                Request</button>
+            <button type="reset" mat-raised-button color="basic" class="basic-button" (click)="reset()">Cancel</button>
+        </div>
+    </div>
+</div>
