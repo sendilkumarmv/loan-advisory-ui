@@ -1,20 +1,10 @@
-
-
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img width="40px" height="40px" src="../assets/images/bank.png">
-  &nbsp;
-  <h3>Mary Land</h3>
-</div>
-
-
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<section>
+    <div class="example-label">Advisor</div>
+    <div class="example-button-row">
+      <button mat-button color="accent" (click)="navigateToRequest()">Request</button>
+      <button mat-button color="accent" (click)="navigateToAdvanced()">Advanced</button>
+      <button mat-button color="accent" (click)="navigateToList()">List</button>
+      <button mat-stroked-button color="primary">Customers</button>
+    </div>
+  </section>
 <router-outlet></router-outlet>

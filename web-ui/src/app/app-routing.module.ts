@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActionsComponent } from './actions/actions.component';
+import { ListComponent } from './list/list.component';
 import { ReqAdvancedComponent } from './req-advanced/req-advanced.component';
+import { RequestComponent } from './request/request.component';
 
 const routes: Routes = [
-  { path: '', component: ActionsComponent},
-  { path: 'reqad', component: ReqAdvancedComponent }
+  { path: 'req', component: RequestComponent},
+  { path: 'advanced', component: ReqAdvancedComponent },
+  { path: 'list', component: ListComponent }
 ];
 
 @NgModule({
