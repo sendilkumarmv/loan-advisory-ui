@@ -1,0 +1,10 @@
+https://www.bloggernepal.com/2020/04/angular-material-data-table-paginator-with-server-side-pagination.html
+https://blog.angular-university.io/angular-material-data-table/
+
+https://stackblogger.com/angular-material-data-table-tutorial/#server-side-pagination-functionality
+
+https://blog.angular-university.io/angular-material-data-table/
+
+https://www.reddit.com/r/Angular2/comments/q5elnr/angular_material_12_data_table_server_side/
+
+https://chsakell.gitbook.io/mongodb-csharp-docs/aggregation/limit-skip-pagination
